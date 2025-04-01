@@ -2,6 +2,7 @@ import clsx from 'clsx';
 
 import { ProductCarousel } from '@/components/ui/shop/ProductCarousel';
 import { TopNav } from '@/components/ui/structural/TopNav';
+import { OwnerReview } from '@/components/ui/reviews/OwnerReview';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       >
         <div id="swabKitLeftSide">
           <ProductCarousel />
+					<OwnerReview />
         </div>
 
         <div id="swabKitRightSide"></div>

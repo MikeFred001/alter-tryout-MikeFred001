@@ -1,0 +1,18 @@
+
+import { Typography } from '@/components/ui/common/Typography';
+import { OwnerSignature } from '@/components/ui/reviews/OwnerSignature';
+
+export const OwnerReview: React.FC = () => {
+	return (
+		<div className="flex flex-col gap-6 border border-alter25-black-c border-opacity-20 rounded-lg p-6">
+			<Typography className="text-alter-black text-lg">Easy process for so many insights</Typography>
+			<Typography className="text-alter-black font-light">
+				Loved the Alter DNA kit experience. The swab process and mailing it back was straightforward and simple. The results were fascinating and actionable. Having someone to walk through the report with me was ideal so I could ask questions real time, but the report itself was very easy to understand.
+			</Typography>
+
+			<OwnerSignature ownerName="Kathryn S." verified />
+		</div>
+	)
+}
+
+export default OwnerReview

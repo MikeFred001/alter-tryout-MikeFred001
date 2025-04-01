@@ -38,7 +38,7 @@ export const ProductCarousel: React.FC = () => {
   }, [emblaMainApi, onSelect]);
 
   return (
-    <div className="mb-6">
+    <div className="PRODUCT-CAROUSEL mb-6 bg-green-500">
       <div className="embla">
         <div className="embla__viewport" ref={emblaMainRef}>
           <div className="embla__container">
