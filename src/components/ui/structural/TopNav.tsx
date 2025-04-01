@@ -43,7 +43,7 @@ export const TopNav: React.FC = () => {
   return (
     <>
       <div className="bg-white w-100">
-        <div className="container mx-auto bg-white">
+        <div className="container mx-auto bg-white text-alter-black">
           <nav className="h-[64px] bg-white py-4 flex justify-between items-center">
             <Link href="/" className="relative h-6 sm:h-7 md:h-8 shrink-0 mr-10">
               <AlterLogotypeBlack alt="Alter logotype" className="h-full w-auto" />
