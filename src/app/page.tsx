@@ -22,13 +22,11 @@ export default function Home() {
           <ProductCarousel />
 					<OwnerReview />
         </div>
-
         <div id="swabKitRightSide">
 					<ProductDetailsTopSection />
 					<Divider />
 					<ProductDetailsMainSection />
 				</div>
-
       </div>
     </>
   );
