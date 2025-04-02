@@ -11,21 +11,16 @@ export default function Home() {
   return (
     <>
       <TopNav />
-      <div
-        className={clsx(
-          'mx-auto lg:my-10',
-          'grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-4'
-        )}
-      >
+      <div className={clsx('mx-auto lg:my-10', 'grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-4')}>
         <div id="swabKitLeftSide" className="md:container">
           <ProductCarousel />
-					<OwnerReview />
+          <OwnerReview />
         </div>
         <div id="swabKitRightSide" className="container">
-					<ProductDetailsTopSection />
-					<Divider className="opacity-0 my-4 md:opacity-20 md:my-8"/>
-					<ProductDetailsMainSection />
-				</div>
+          <ProductDetailsTopSection />
+          <Divider className="opacity-0 my-4 md:opacity-20 md:my-8" />
+          <ProductDetailsMainSection />
+        </div>
       </div>
     </>
   );

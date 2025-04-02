@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 type TypographyProps = {
-  as?: "p" | "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span" | "div";
+  as?: 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span' | 'div';
   children: number | React.ReactNode;
   className?: string;
   currency?: boolean;
@@ -9,16 +9,14 @@ type TypographyProps = {
 };
 
 export const Typography: React.FC<TypographyProps> = ({
-  as: Tag = "p",
+  as: Tag = 'p',
   children,
   currency,
-  className = "",
+  className = '',
   onClick,
 }) => {
   const formattedChildren =
-    currency && typeof children === "number"
-      ? `$${children.toFixed(2)}`
-      : children;
+    currency && typeof children === 'number' ? `$${children.toFixed(2)}` : children;
 
   return (
     <Tag className={className} onClick={onClick}>
@@ -26,4 +24,3 @@ export const Typography: React.FC<TypographyProps> = ({
     </Tag>
   );
 };
-

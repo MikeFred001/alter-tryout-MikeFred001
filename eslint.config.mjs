@@ -104,12 +104,11 @@ const config = [
     },
   },
   ...fixupConfigRules(
-    compat
-      .extends
-      // 'plugin:react/recommended',
-      // 'plugin:react-hooks/recommended',
-      // 'next/core-web-vitals'
-      ()
+    compat.extends(
+      'plugin:react/recommended',
+      'plugin:react-hooks/recommended',
+      'next/core-web-vitals'
+    )
   ).map((config) => ({
     ...config,
     files: ['src/**/*.ts', 'src/**/*.tsx'],
