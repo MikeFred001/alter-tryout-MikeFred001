@@ -13,18 +13,17 @@ export default function Home() {
       <TopNav />
       <div
         className={clsx(
-          'container mx-auto my-10',
-          'grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-4',
-          // 'bg-alter25-cream-a'
+          'mx-auto lg:my-10',
+          'grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-4'
         )}
       >
-        <div id="swabKitLeftSide">
+        <div id="swabKitLeftSide" className="md:container">
           <ProductCarousel />
 					<OwnerReview />
         </div>
-        <div id="swabKitRightSide">
+        <div id="swabKitRightSide" className="container">
 					<ProductDetailsTopSection />
-					<Divider />
+					<Divider className="opacity-0 my-4 md:opacity-20 md:my-8"/>
 					<ProductDetailsMainSection />
 				</div>
       </div>

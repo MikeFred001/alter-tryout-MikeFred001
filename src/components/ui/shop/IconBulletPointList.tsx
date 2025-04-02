@@ -7,7 +7,7 @@ import { IconBulletPoint } from '@/components/ui/common/IconBulletPoint';
 
 export const IconBulletPointList: React.FC = () => {
 	return (
-		<div className="grid grid-cols-2 gap-3">
+		<div className="flex flex-col md:grid md:grid-cols-2 gap-3">
 			<IconBulletPoint
 				icon={<CircleIcon icon={<Dumbbell />} />}
 				text="Your best type of exercise"

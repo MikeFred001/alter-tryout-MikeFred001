@@ -6,7 +6,7 @@ import { BuyNowButton } from '@/components/ui/shop/BuyNowButton';
 export const ProductDetailsMainSection: React.FC = () => {
 	return (
 		<div className="flex flex-col gap-8">
-			<Typography className="font-light">
+			<Typography className="font-light md:block hidden">
 				Created by experts from Stanford University, the NBA, and Mayo Clinic. This is where the guesswork ends. Find out what your body needs through your DNA in the comfort of your own home.
 			</Typography>
 			<IncludedList />

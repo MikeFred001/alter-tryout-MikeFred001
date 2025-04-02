@@ -1,6 +1,7 @@
 import { Typography } from '@/components/ui/common/Typography';
 import { ProductTags } from '@/components/ui/shop/ProductTags';
 import { PriceDetails } from '@/components/ui/shop/PriceDetails';
+import { BuyNowButton } from '@/components/ui/shop/BuyNowButton';
 
 export const ProductDetailsTopSection: React.FC = () => {
 	return (
@@ -15,8 +16,7 @@ export const ProductDetailsTopSection: React.FC = () => {
 				discount={50}
 			/>
 			<Typography>1,100 bought <span className="font-light">in past month</span></Typography>
+			<BuyNowButton className="md:block lg:hidden"/>
 		</div>
 	)
 }
-
-export default ProductDetailsTopSection
