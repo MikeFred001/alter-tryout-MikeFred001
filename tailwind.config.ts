@@ -51,6 +51,8 @@ export default {
       'alter25-red': '#E0432E;',
       'badge-gray': '#D5D7D8',
       'highlight-green': '#DEECDD',
+			'highlight-green-fade-in': '#33912E33',
+			'highlight-green-fade-out': '#33912E1A',
       'checkmark-green': '#33912E',
     },
   },

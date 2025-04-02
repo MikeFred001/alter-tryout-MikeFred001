@@ -1,0 +1,14 @@
+interface DumbbellProps {
+  className?: string;
+}
+
+export const Dumbbell = ({ className = '' }: DumbbellProps) => {
+  return (
+    <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M4 1H4.75H7.25H8V1.75V7.25H12V1.75V1H12.75H15.25H16V1.75V3.25H17.75H18.5V4V7.25H19.25H20V8.75H19.25H18.5V12V12.75H17.75H16V14.25V15H15.25H12.75H12V14.25V8.75H8V14.25V15H7.25H4.75H4V14.25V12.75H2.25H1.5V12V8.75H0.75H0V7.25H0.75H1.5V4V3.25H2.25H4V1.75V1ZM5.5 3.25V4V12V12.75V13.5H6.5V2.5H5.5V3.25ZM4 4.75H3V11.25H4V4.75ZM14.5 12V4V3.25V2.5H13.5V13.5H14.5V12.75V12ZM17 11.25V4.75H16V11.25H17Z"
+        fill="#1A1818"
+      />
+    </svg>
+  );
+};
